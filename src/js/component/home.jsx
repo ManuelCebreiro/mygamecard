@@ -1,13 +1,18 @@
-import React from "react";
+import React,{useState} from "react";
+import BtnIntro from "./btnintro.jsx";
 import Wallpapper from "./wallpapper.jsx";
-import Btnintro from "./btnintro.jsx";
+import Navbar from "./navbar.jsx";
+
 
 
 const Home = (props) => {
+	const [isStarter, setIsStarter] = useState(false)
+
 	return (
 		<div>
-		<Btnintro/>
-		<Wallpapper/>
+		<Navbar/>
+		{isStarter ? <Wallpapper/> : <BtnIntro funcion={setIsStarter}/>}
+	
 		</div>
 		)
 };

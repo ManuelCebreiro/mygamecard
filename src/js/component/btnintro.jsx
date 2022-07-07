@@ -2,11 +2,11 @@ import React from "react";
 
 
 
-const Fondo = (props) =>{
+const BtnIntro = ({funcion}) =>{
     return(
         <div className="mt-0">
         <h1 id="text" className="atari">Bienvenido</h1>
-        <button onClick={disable}  id="btn" className="atari">Start</button>
+        <button onClick={()=>funcion(true)}  id="btn" className="atari">Start</button>
         </div>
     )
 }
@@ -20,10 +20,4 @@ function disable(){
 }
 
 
-
-
-
-
-
-
-export default Fondo
+export default BtnIntro
