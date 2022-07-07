@@ -1,15 +1,20 @@
 import React from "react";
-import { ArrowsMove } from 'react-bootstrap-icons';
+
+import { HourglassSplit, HandIndexFill } from 'react-bootstrap-icons';
+
 
 const Navbar = (props) => {
     return (
-        <nav class="navbar navbar-light bg-light border-radius 20px">
+      <div className="container ">
+        <nav class="navbar ">
         <div class="container-fluid">
-        <ArrowsMove/>
-          <i class="bi bi-heart-fill"></i>
+        <HourglassSplit/>
+        <p className="atariscore">High Score</p>
+        <HandIndexFill/>
 
         </div>
       </nav>
+      </div>
     )
 }
 

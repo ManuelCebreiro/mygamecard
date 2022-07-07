@@ -10,7 +10,7 @@ const Home = (props) => {
 
 	return (
 		<div>
-		<Navbar/>
+
 		{isStarter ? <Wallpapper/> : <BtnIntro funcion={setIsStarter}/>}
 	
 		</div>

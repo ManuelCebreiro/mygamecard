@@ -11,13 +11,9 @@ const BtnIntro = ({funcion}) =>{
     )
 }
 
-function disable(){ 
-    btn.remove();
-    text.remove();
-
-    /*btn.style.display = "none";
-    text.style.display = "none";*/
-}
+// function disable(){ 
+//     btn.remove();
+//     text.remove();}
 
 
 export default BtnIntro
