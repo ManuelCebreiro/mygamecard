@@ -98,6 +98,12 @@ body{
     background-size: cover;
     animation: infinite resplandorAnimationCard 2s;
 }
+.bodyCard:hover {
+    transform: rotateY(180deg);
+    transition: all 1s linear;
+    
+    }
+    
 .frontCard{
     width:14vh;
     height:24vh;
